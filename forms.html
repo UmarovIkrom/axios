@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navigation">
+            <div class="navbar-nav">
+                <a href="./index.html">Posts</a>
+                <a href="./comments.html">Comments</a>
+                <a href="./albums.html">Albums</a>
+                <a href="./forms.html">Forms</a>
+            </div>
+        </div>
+    </nav>
+ 
+    <br>
+    
+    <div class="form-container">
+        <form class="dropdown-form">
+            <select name="requests" default="default" id="requests" class="select-btn" onchange="myFunction(value)">
+                <option class="option" value="default">Select option</option>
+                <option class="option" value="posts">Post</option>
+                <option class="option" value="comments">Comments</option>
+                <option class="option" value="albums">Album</option>
+            </select>
+        </form>
+    
+        <h2 class="form-header">Add data:</h2>
+        <div class="form">
+            <input type="text" id="title" class="title-input" placeholder="Title:">
+            <input type="text" id="name" class="fristname-input" placeholder="Fristname:" >
+            <input type="text" id="label" class="email-input" placeholder="Email: example@gmail.com">
+            <textarea class="textarea textarea-option" id="body" cols="10" rows="10" placeholder="Body:"></textarea>
+            <input type="button" value="Submit" class="btn-submit" >
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="./forms.js"></script>
+</body>
+</html>
